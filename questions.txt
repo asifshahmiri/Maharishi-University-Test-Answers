@@ -1,0 +1,96 @@
+
+Maharishi University of Management
+Fairfield, Iowa, USA
+Computer Professionals Program
+Master of Science in Computer Science Cooperative Program
+Applicant Information Form
+
+Asif Ali logged on
+Applicant ID: 250529
+
+This exam and all related materials are private copyrighted material and the intellectual property of M.U.M. and are provided solely for individual use on this admissions pre-test. They are not to be copied or further distributed without written permission from M.U.M.
+
+The purpose of this short test is to assess your ability to solve elementary programming problems in a language of your choice. Write your solutions in Java if you are familiar with that language; otherwise use one of these languages: C, C++, or C#. If you do not have access to a compiler for your language, write your answers in a text editor such as notepad and mention in a comment that you did not use a compiler.
+
+For each of the problems below, write the simplest, clearest solution you can, in the form of a short program. Answer as much as you can for a problem, even if you do not have the complete answer.
+
+If you are using C or C++ and the function you are writing requires an array parameter then you will also have to have a parameter that is the length of the array. This is not necessary in C# or Java since an array is an object in those languages and has a length method that returns the length of the array.
+
+You do not need to do any I/O, i.e., you can hard-code your input data and do not have to write out anything to the console. Keep it simple! We are primarily interested in what you write in the body of the function. However, please be sure that your solution will work for all valid input data.
+
+The clock is ticking now, so you don't have time to ask for clarifications on any of the questions. If something is not clear to you, resolve it yourself and state in a comment in the program what was unclear and how you resolved it.
+
+When you have finished an answer, copy and paste it into the text box associated with the question and click the submit button to save it in our database. If you change an answer and submit it again, the previous version of the answer will be overwritten with the new version.
+
+
+ 
+
+1 An array is defined to be stepped if it is in ascending order and there are 3 or more occurrences of each distinct value in the array. Note that ascending order means a[n]<=a[n+1]. It does not mean a[n] (this is strictly ascending). Write a function named isStepped that returns 1 if its array argument is stepped, otherwise return 0.
+
+If you are programming in Java or C#, the signature is
+int isStepped(int[ ] a)
+
+If you are programming in C or C++, the signature is
+int isStepped(int a[ ], int len) where len is the number of elements in the array.
+
+Examples
+If the array is 	return 	reason
+{1, 1, 1, 5, 5, 5, 5, 8, 8, 8} 	1 	It is in ascending order. The distinct values of the array are 1, 5, 8 and there are three or more occurrences of each of these values.
+{1, 1, 5, 5, 5, 5, 8, 8, 8} 	0 	Even though it is in ascending order, there are only two occurrences of the value 1.
+{5, 5, 5, 15} 	0 	Even though it is in ascending order, there is only one occurrence of the value 15.
+{3, 3, 3, 2, 2, 2, 5, 5, 5} 	0 	It is not in ascending order
+{3, 3, 3, 2, 2, 2, 1, 1, 1} 	0 	It is not in ascending order
+{1, 1, 1} 	1 	It is in ascending order and there are three or more occurrences of each distinct value. In this case there is only one distinct value.
+{1, 1, 1, 1, 1, 1, 1} 	1 	It is in ascending order and there are three or more occurrences of each distinct value. In this case there is only one distinct value.
+
+Copy and paste your answer here and click the "Submit answer" button
+
+
+
+You should see a confirmation popup after hitting the submit button above. If you do not see a confirmation popup, please email your answer.
+
+
+ 
+
+2. The Fibonacci sequence of numbers is 1, 1, 2, 3, 5, 8, 13, 21, 34, ... The first and second numbers are 1 and after that ni = ni-2 + ni-1, e.g., 34 = 13 + 21. A number in the sequence is called a Fibonacci number. Write a method with signature int closestFibonacci(int n) which returns the largest Fibonacci number that is less than or equal to its argument. For example, closestFibonacci(12) returns 8 because 8 is the largest Fibonacci number less than 12 and closestFibonacci(33) returns 21 because 21 is the largest Fibonacci number that is <= 33. closestFibonacci(34) should return 34. If the argument is less than 1 return 0. Your solution must not use recursion because unless you cache the Fibonacci numbers as you find them, the recursive solution recomputes the same Fibonacci number many times.
+
+Copy and paste your answer here and click the "Submit answer" button
+
+
+
+You should see a confirmation popup after hitting the submit button above. If you do not see a confirmation popup, please email your answer.
+
+
+ 
+
+3. An array is defined to be twin paired if its even-valued elements (if any) are in ascending order 
+and its odd-valued elements (if any) are in ascending order.
+
+The array {-6, 12, 1, 24, 3, 5} is twin paired because the even-valued elements (-6, 12, 24) 
+are in ascending order and so are the odd-valued elements (1, 3, 5). However, the array {3, 2, 1} is not twin paired because the odd numbers 
+are not in ascending order.
+
+Write a function named isTwinPaired that returns 1 if its array argument is twin paired, otherwise it returns 0.
+
+If you are programming in Java or C#, the function signature is
+int isTwinPaired(int[ ] a)
+
+If you are programming in C or C++, the function signature is
+int isTwinPaired(int a[ ], int len) where len is the number of elements in a.
+
+Other twin paired arrays include:
+{2, 4, 32},
+{2, 2, 2, 1, 1, 1},
+{1, 19, 23},
+{1, 2},
+{2, 1},
+{8},
+{17},
+{ }
+
+Copy and paste your answer here and click the "Submit answer" button
+
+
+
+You should see a confirmation popup after hitting the submit button above. If you do not see a confirmation popup, please email your answer.
+Once you have completed all three answers and submitted them individually, you can safely close your browser.

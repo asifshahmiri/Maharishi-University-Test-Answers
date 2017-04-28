@@ -1,0 +1,124 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Practise
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine(isTwinPaired(new int[] { -6, 24, 1, 12, 3, 5 }));
+            Console.WriteLine(isstepped(new int[] { -1, -1, -1}));
+            Console.WriteLine(Fibonacci(56));
+            Console.ReadLine();
+        }
+
+
+        #region isTwinPaired
+        static int isTwinPaired(int[] a) 
+        {
+            int eventwin = 0;
+            int oddtwin = 0;
+            for (int i = 0; i <= a.Length; i++)
+            {
+                //for (int j = 0; j < a.Length; j++)
+                //{
+                       
+                if (a[i] % 2 == 0)
+                {
+                    int tempeventwin = a[i+1];
+                    eventwin = a[i];
+                    if (eventwin < tempeventwin)
+                  {
+                            
+                } 
+                       
+                }
+                else if(a[i] % 2 == 1)
+                {
+                    int tempoddtwin = a[i+1];
+                    oddtwin = a[i];
+                    if (oddtwin<tempoddtwin )
+	                {
+		                
+	                }
+                }
+
+                else
+                {
+                    return 0;
+                }
+                 //}
+
+            }
+            return 1;
+        }
+
+
+        #endregion
+
+
+================================================================================================================
+
+        #region Stepped Array
+        static int isstepped(int[] a)
+        {
+            int stepped = 1;
+            int count = 0;
+            for (int i = 0; i < a.Length; i++)
+            {
+                for (int j = 0; j < a.Length; j++)
+                {
+                    if (a[i] == a[j])
+                    {
+                        count++;
+                    }
+                    else if (count >= 3 && a[i] != a[j])
+                    {
+                        if (a[count] < a[j])
+                        {
+                            return 0;
+                        }
+                        count = 0;
+                    }
+                    else
+                    {
+                        return 0;
+                    }
+                }
+            }
+
+            return stepped;
+        }
+        #endregion
+====================================================================================================
+        #region fabonacci
+        public static int Fibonacci(int n)
+        {
+            if (n < 1)
+            {
+                return 0;
+            }
+            else
+            {
+                int a = 1;
+                int b = 1;
+                for (int i = 0; i < n; i++)
+                {
+                    int temp = a;
+                    a = b;
+                    b = temp + b;
+                    if (b > n)
+                    {
+                        return a;
+                    }
+                }
+                return b;
+            }
+        }
+        #endregion
+    }
+}
